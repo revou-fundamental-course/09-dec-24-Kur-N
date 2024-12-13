@@ -1,1 +1,63 @@
 /* Ini CSS */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+}
+
+nav > a {
+    border: 1px solid;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    /* border-radius: 6px; */
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/200);
+}
+
+.banner-img {
+    height: 320px;
+    background-image: url(https://picsum.photos/750);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-header {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 24px;
+}
+
+.main-item {
+    flex:1;
+}
+
+form {
+    background-color: aliceblue;
+}
+
+.our-package-header {
+    padding: 32px 0px;
+    margin-top: 24px;
+    background-color: aliceblue;
+}
+
+footer {
+    margin-top: 24px;
+    text-align: center;
+}
