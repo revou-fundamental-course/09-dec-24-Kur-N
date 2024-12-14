@@ -1,4 +1,13 @@
 /* Ini CSS */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-description{
+    font-size: 16px;
+    color: rgb(121, 141, 163);  
+}
+
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -27,6 +36,14 @@ nav > a {
     background-image: url(https://picsum.photos/200);
 }
 
+#nav-home {
+    border-radius: 4px 0px 0px 4px;
+}
+
+#nav-call {
+    border-radius: 0px 4px 4px 0px;
+}
+
 .banner-img {
     height: 320px;
     background-image: url(https://picsum.photos/750);
@@ -38,13 +55,70 @@ nav > a {
     text-align: center;
 }
 
-.main-container {
-    display: flex;
-    gap: 24px;
+.content-header > h1 {
+    margin:32px 0px;
 }
 
-.main-item {
+.content-header > p {
+    color: rgb(121, 141, 163);
+    margin: 50px 0px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    margin: 0px 60px;
+}
+
+.main-container form {
+    display: grid;
+    row-gap: 50px;
+}
+
+.form-description {
+    margin: 30px 70px 0px 70px;
+    padding: 0;
+    max-height: 120px;
+}
+
+.form-container {
+    display: grid;
+    gap: 10px;
+    margin: 0 70px;
+}
+
+.form-container > label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-container > input,
+.form-container > select {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.form-container > button {
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 4px;
+    /* margin: 10px 0px; */
+    margin-bottom: 50px;
+}
+/* .main-item {
     flex:1;
+} */
+
+.main-container > aside {
+    flex: 1.8
+}
+
+.main-container > form {
+    flex: 1;
 }
 
 form {

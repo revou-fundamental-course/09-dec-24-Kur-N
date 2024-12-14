@@ -10,16 +10,17 @@
     <header class="main-header">
         <div class="home-icon"></div>
         <nav>
-            <a href="#">Home</a>
+            <a href="#" id="nav-home">Home</a>
             <a href="#our-package-section">Our Package</a>
-            <a href="#">Call Us</a>
+            <a href="#" id="nav-call">Call Us</a>
         </nav>
     </header>
     <hr>
     <main>
         <header class="content-header">
             <h1>Your Trusted Travel Agent's</h1>
-            <h3>Your Happiness is Our Happiness</h3>
+            <!-- <h3>Your Happiness is Our Happiness</h3> -->
+            <p>Your happiness is our happiness</p>
         </header>
 
         <!-- Home Content -->
@@ -27,13 +28,31 @@
             <!-- Banner auto slide content -->
             <aside class="main-item">
                 <div class="banner-img">
-
+                    <!-- <img src="" alt="" srcset=""> -->
                 </div>
             </aside>
 
             <!-- Form Contact Us -->
             <form action="#" class="main-item">
-
+                <!-- Description -->
+                <div class="form-description">
+                    <h3>Contact Us</h3>
+                    <p class="text-description">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                </div>
+                <!-- Form -->
+                 <!-- TO DO edit css input dan select  -->
+                <div class="form-container">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="First and last name">
+                    <label for="name">Email Address:</label>
+                    <input type="text" name="email" id="email" placeholder="example@email.com">
+                    <label for="interest">What are you interested in?</label>
+                    <select name="interest" id="interest" placeholder="Select option">
+                        <option value="" disabled selected>Select Option</option>
+                        <!-- <option value="sofware">Sofware Engineering</option> -->
+                    </select>
+                    <button type="submit">SEND</button>
+                </div>
             </form>
         </section>
 
@@ -46,7 +65,7 @@
         </section>
 
     </main>
-
+    <hr>
     <footer>
         <span>Made by Kur-N &copy2024</span>
     </footer>
