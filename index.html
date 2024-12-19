@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Agent's</title>
     <link rel="stylesheet" href="css\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
         <div class="home-icon"></div>
         <nav>
-            <a href="#" id="nav-home">Home</a>
+            <a href="#home" id="nav-home">Home</a>
             <a href="#our-package-section">Our Package</a>
-            <a href="#" id="nav-call">Call Us</a>
+            <a href="#call-us" id="nav-call">Call Us</a>
         </nav>
     </header>
     <hr>
     <main>
-        <header class="content-header">
+        <header class="content-header" id="home">
             <h1>Your Trusted Travel Agent's</h1>
-            <!-- <h3>Your Happiness is Our Happiness</h3> -->
             <p>Your happiness is our happiness</p>
         </header>
 
@@ -27,13 +27,38 @@
         <section class="main-container">
             <!-- Banner auto slide content -->
             <aside class="main-item">
-                <div class="banner-img">
-                    <!-- <img src="" alt="" srcset=""> -->
+                <div class="banner-img banner-1">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali-1">
+                </div>
+                <div class="banner-img banner-2">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali-2">
+                </div>
+                <div class="banner-img banner-3">
+                    <img src="https://images.unsplash.com/photo-1571984405176-5958bd9ac31d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali-3">
+                </div>
+                <div class="img-desc-container">
+                    <figcaption class="image-caption">"Liburan ke Bali dengan Travel Agentku."</figcaption>
+                    <div class="account-container">
+                        <img src="https://picsum.photos/100" alt="Profil Picture">
+                        <div class="desc-account-container">
+                            <p class="name-account">Florence Hughes</p>
+                            <p class="desc-account">Ibu Rumah Tangga, 28</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="text-head">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
+                    <ol class="text-description">
+                        <li>Your first feature, written in the form of a benefit statement.</li>
+                        <li>Your second feature, written in the form of a benefit statement.</li>
+                        <li>Your third feature, written in the form of a benefit statement.</li>
+                    </ol>
                 </div>
             </aside>
 
             <!-- Form Contact Us -->
-            <form action="#" class="main-item">
+            <form class="main-item" id="contact-us" action="#contact-us" onsubmit="validateForm(event)">
                 <!-- Description -->
                 <div class="form-description">
                     <h3>Contact Us</h3>
@@ -44,14 +69,23 @@
                 <div class="form-container">
                     <label for="name">Your Name:</label>
                     <input type="text" name="name" id="name" placeholder="First and last name">
+                    <div class="error-message" id="name-error"></div>
+                    
                     <label for="name">Email Address:</label>
                     <input type="text" name="email" id="email" placeholder="example@email.com">
+                    <div class="error-message" id="email-error"></div>
+
                     <label for="interest">What are you interested in?</label>
                     <select name="interest" id="interest" placeholder="Select option">
                         <option value="" disabled selected>Select Option</option>
-                        <!-- <option value="sofware">Sofware Engineering</option> -->
+                        <option value="vacation">Vacation</option>
+                        <option value="work">Work</option>
+                        <option value="education">Education</option>
+                        <option value="sports">Sports</option>
                     </select>
-                    <button type="submit">SEND</button>
+                    <div class="error-message" id="interest-error"></div>
+
+                    <button type="submit" id="submit-btn">SEND</button>
                 </div>
             </form>
         </section>
@@ -61,13 +95,81 @@
             <header class="content-header our-package-header">
                 <h1>Our Packages</h1>
             </header>
-
+            <section class="our-package-container">
+                <ul class="custom-list">
+                    <li>
+                      <div class="icon-circle">
+                        <i class="mdi mdi-lightbulb"></i>
+                      </div>
+                      <div class="package-name">
+                          <p class="text-head">Bali</p>
+                          <p class="text-description">Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-circle">
+                        <i class="mdi mdi-lightbulb"></i>
+                      </div>
+                      <div class="package-name">
+                        <p class="text-head">Japan</p>
+                        <p class="text-description">Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="icon-circle">
+                        <i class="mdi mdi-lightbulb"></i>
+                      </div>
+                      <div class="package-name">
+                        <p class="text-head">Singapore</p>
+                        <p class="text-description">This description supports and extends the bullet point above.</p>
+                    </div>  
+                    </li>
+                  </ul>
+            </section>
+            <section class="our-package-container">
+                <ul class="custom-list">
+                    <li>
+                      <div class="icon-circle">
+                        <i class="mdi mdi-star"></i>
+                      </div>
+                      <div class="package-name">
+                          <p class="text-head">Bandung</p>
+                          <p class="text-description">This description supports and extends the bullet point above.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon-circle">
+                        <i class="mdi mdi-star"></i>
+                      </div>
+                      <div class="package-name">
+                        <p class="text-head">Surabaya</p>
+                        <p class="text-description">This description supports and extends the bullet point above.</p>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="icon-circle">
+                        <i class="mdi mdi-star"></i>
+                      </div>
+                      <div class="package-name">
+                        <p class="text-head">Third Feature</p>
+                        <p class="text-description">This description supports and extends the bullet point above.</p>
+                    </div>  
+                    </li>
+                  </ul>
+            </section>
         </section>
-
+        <hr>
+        <!-- Call Us Section -->
+        <section class="call-us-section" id="call-us">
+            <h1>Your Closing Argument Headline</h1>
+            <p class="text-description">Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, equismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla.</p>
+            <button>CALL TO ACTION</button>
+        </section>
     </main>
     <hr>
     <footer>
         <span>Made by Kur-N &copy2024</span>
     </footer>
+    <script src="js\script.js"></script>
 </body>
 </html>
